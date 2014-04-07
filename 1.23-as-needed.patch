@@ -1,0 +1,12 @@
+--- origsrc/libintl-perl-1.23/Makefile.PL	2013-01-14 10:50:32.000000000 -0600
++++ src/libintl-perl-1.23/Makefile.PL	2014-04-06 21:41:48.340483200 -0500
+@@ -127,8 +127,8 @@ sub ac_try_link {
+     push @cmd, $Config{ccflags};
+     push @cmd, $Config{ldflags};
+     push @cmd, $Config{perllibs};
+-	push @cmd, @options;
+     push @cmd, "-o", "gettest.exe", "gettest.c";
++	push @cmd, @options;
+ 
+     # Temporarily redirect stdout and stderr.
+     open OLDOUT, ">&STDOUT" or die "cannot dup STDOUT: $!";

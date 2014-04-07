@@ -1,0 +1,13 @@
+CPAN_AUTHOR=guido
+inherit perl
+
+NAME="perl-libintl-perl"
+VERSION=1.23
+RELEASE=1
+CATEGORY="Perl"
+SUMMARY="Perl internationalization modules"
+DESCRIPTION="The package libintl-perl is an internationalization library for
+Perl that aims to be compatible with the Uniforum message translations system
+as implemented for example in GNU gettext."
+
+PATCH_URI="1.23-as-needed.patch"
